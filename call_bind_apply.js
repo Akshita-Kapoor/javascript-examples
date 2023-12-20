@@ -31,3 +31,11 @@ printName.call(nameObj2, ' Mumbai', 'Maharashtra');
 */
 
 printName.apply(nameObj2, [' Mumbai', 'Maharashtra']);
+
+/*
+    bind method: It binds the method with the object and returns us the copy of that method.
+*/
+
+let printMyName = printName.bind(nameObj2, 'Delhi', 'Delhi');
+console.log(printName);  // function which can be invoked later.
+printMyName();
