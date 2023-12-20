@@ -36,6 +36,6 @@ printName.apply(nameObj2, [' Mumbai', 'Maharashtra']);
     bind method: It binds the method with the object and returns us the copy of that method.
 */
 
-let printMyName = printName.bind(nameObj2, 'Delhi', 'Delhi');
+let printMyName = printName.bind(nameObj2, 'Delhi', 'Delhi');  // Here, nameObj2 is the reference to the 'this' variable inside printName method
 console.log(printName);  // function which can be invoked later.
 printMyName();
