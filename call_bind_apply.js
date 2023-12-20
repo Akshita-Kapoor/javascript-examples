@@ -25,3 +25,9 @@ let nameObj2 = {
 */
 
 printName.call(nameObj2, ' Mumbai', 'Maharashtra');
+
+/*
+    apply method: The only difference between call & apply method is the way we pass the arguments.
+*/
+
+printName.apply(nameObj2, [' Mumbai', 'Maharashtra']);
